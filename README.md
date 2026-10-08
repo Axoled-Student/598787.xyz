@@ -13,7 +13,8 @@ The homepage describes potential Claude-assisted email summarization, natural-la
 ## Site files
 
 - `index.html`: responsive public landing page
-- `site.css`: shared design system
+- `site-20261008-v3.css`: versioned production stylesheet (new URL avoids reuse of previously cached `site.css`)
+- `site.css`: legacy stylesheet, retained for compatibility
 - `privacy.html`: NTU Gmail Sync privacy policy
 - `terms.html`: NTU Gmail Sync terms of service
 - `CNAME`: custom domain configuration
@@ -24,4 +25,4 @@ This is a static GitHub Pages site served at https://598787.xyz. Merge the revie
 
 ## Transparency
 
-Axo Mail is described as an independent project, not a registered corporation. It is not affiliated with Google, National Taiwan University, or Anthropic. Existing privacy and terms documents remain applicable to NTU Gmail Sync; revise them before changing its actual data practices or launching AI email processing.
+Axo Mail is described as an independent project; the public website does not assert any legal incorporation status, customers, or revenue. It is not affiliated with Google, National Taiwan University, or Anthropic. Existing privacy and terms documents remain applicable to NTU Gmail Sync; revise them before changing its actual data practices or launching AI email processing.
