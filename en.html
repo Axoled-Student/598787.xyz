@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142d41">
+  <meta name="description" content="Axo Mail is an independent software project focused on practical email tools. Learn about NTU Gmail Sync, our work with Google OAuth, and future Claude research.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Axo Mail | Independent software project">
+  <meta property="og:description" content="Building practical email utilities, starting with NTU Gmail Sync. See current work, development plans, and project information.">
+  <meta property="og:url" content="https://598787.xyz/en.html">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://598787.xyz/en.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://598787.xyz/">
+  <link rel="alternate" hreflang="en" href="https://598787.xyz/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://598787.xyz/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/site-20261008-zh-v4.css">
+  <title>Axo Mail — Gmail tools and email workflow research</title>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span>Independent software project</span>
+      <div class="utility-links">
+        <a href="/" lang="zh-Hant" hreflang="zh-TW">繁體中文</a>
+        <span class="language-current" aria-current="page">EN</span>
+        <span class="utility-divider" aria-hidden="true"></span>
+        <a href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/en.html" aria-label="Axo Mail homepage in English">
+        <span class="logo-symbol" aria-hidden="true">A</span>
+        <span class="logo-name">AXO <span>MAIL</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#development">Development</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="overline overline-light">Welcome to Axo Mail</p>
+          <h1 id="hero-title">Building practical tools <span>around Gmail.</span></h1>
+          <p class="hero-description">Axo Mail is an independent project for people who manage their own Gmail accounts. Our existing work is NTU Gmail Sync, a personal synchronization utility. Next, we want to test whether Claude can help summarize long conversations, find relevant messages, and prepare replies for people to review.</p>
+          <div class="hero-actions">
+            <a class="action action-primary" href="#projects">View our project <span aria-hidden="true">→</span></a>
+            <a class="action action-outline" href="#about">Learn about us</a>
+          </div>
+        </div>
+        <aside class="hero-aside" aria-label="Project overview">
+          <p class="aside-title">At a glance</p>
+          <div class="aside-item">
+            <span>What exists today</span>
+            <strong>NTU Gmail Sync</strong>
+            <p>A personal utility built around user-authorized Gmail synchronization.</p>
+          </div>
+          <div class="aside-item">
+            <span>Intended users</span>
+            <strong>Individuals managing Gmail</strong>
+            <p>People who want more control over syncing and understanding their own messages.</p>
+          </div>
+          <div class="aside-item">
+            <span>Where Claude fits</span>
+            <strong>Optional email assistance</strong>
+            <p>Planned summaries, search assistance, and user-reviewed drafts. Not released.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="section-trail" aria-hidden="true">
+      <div class="container trail-inner"><span>Independent development</span><span class="trail-separator"></span><span>Email tools</span><span class="trail-separator"></span><span>Thoughtful AI integration</span></div>
+    </div>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container split-layout">
+        <div class="section-lead">
+          <p class="overline">01 / About</p>
+          <h2 id="about-title">Small in scope.<br>Clear in purpose.</h2>
+        </div>
+        <div class="section-copy">
+          <p class="lead">Axo Mail focuses on a simple problem: managing and understanding email can take too much time.</p>
+          <p>Our approach is straightforward: start with a concrete problem, build something useful, document what it does, and improve it over time.</p>
+          <p>We are developing for individual Gmail users who want to handle their own data and spend less time searching long threads. NTU Gmail Sync is the existing utility; Axo Mail is the wider direction for further email tools. AI-assisted functions remain research plans, not live features.</p>
+          <a class="inline-link" href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">Visit the project repository <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="overline">02 / Projects</p>
+          <h2 id="projects-title">What we're working on</h2>
+          <p>We distinguish the utility we have already documented from the features we plan to test.</p>
+        </div>
+
+        <article class="project-feature">
+          <div class="project-ident">
+            <span class="project-index">Featured project / 01</span>
+            <h3>NTU Gmail Sync</h3>
+            <span class="project-status">Existing project</span>
+          </div>
+          <div class="project-description">
+            <p>NTU Gmail Sync is a personal utility intended to let a user authorize their own Google account and perform Gmail synchronization for their requested workflow.</p>
+            <p>The utility is designed around user authorization with Google OAuth. This public website explains its purpose and links to data-handling policies; this website itself does not connect to Gmail. The name NTU Gmail Sync refers to this specific existing utility under the broader Axo Mail project direction.</p>
+            <div class="project-links">
+              <a class="inline-link" href="/privacy-en.html">Privacy policy <span aria-hidden="true">↗</span></a>
+              <a class="inline-link" href="/terms-en.html">Terms of service <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section development-section" id="development" aria-labelledby="development-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="overline">03 / Development</p>
+          <h2 id="development-title">Current direction</h2>
+          <p>We plan to test whether Claude can turn selected, user-authorized email content into something immediately useful. These are research topics, not available product features.</p>
+        </div>
+
+        <div class="development-list">
+          <div class="development-row">
+            <span class="row-number">01</span>
+            <div>
+              <h3>Conversation summaries</h3>
+              <p>Given a conversation a user selects, Claude could generate a concise summary and identify follow-up items.</p>
+            </div>
+            <span class="phase">Research</span>
+          </div>
+          <div class="development-row">
+            <span class="row-number">02</span>
+            <div>
+              <h3>Natural-language search</h3>
+              <p>With authorized message context, Claude could help answer a user's question and point them to relevant messages.</p>
+            </div>
+            <span class="phase">Research</span>
+          </div>
+          <div class="development-row">
+            <span class="row-number">03</span>
+            <div>
+              <h3>Reply assistance</h3>
+              <p>Using a selected thread and user instructions, Claude could draft a reply for review. The user would decide whether to send it.</p>
+            </div>
+            <span class="phase">Research</span>
+          </div>
+        </div>
+
+        <div class="workflow-proposal" aria-label="Proposed Claude processing workflow">
+          <p>Proposed workflow — not implemented</p>
+          <ol class="workflow-steps">
+            <li><strong>1. User selects</strong><span>A person authorizes access and chooses the messages or conversation they want help with.</span></li>
+            <li><strong>2. Claude processes</strong><span>The proposed integration would send only the relevant authorized content and the user’s request to Claude for analysis.</span></li>
+            <li><strong>3. User reviews</strong><span>A summary, cited answer, or draft comes back for review. The user stays in control of any reply.</span></li>
+          </ol>
+        </div>
+
+        <div class="development-note">
+          <strong>About data and AI</strong>
+          <p>The Axo Mail website does not process Gmail messages or send email data to Claude. Before building or launching an integration, we will evaluate Google API Limited Use requirements, data protection, access controls, user consent, and retention policies. Nothing here claims a working Claude integration today.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <div class="section-lead">
+          <p class="overline">04 / Information</p>
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <p>Basic information about the project and how it is being developed.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Who maintains Axo Mail?<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Axo Mail is an independently developed early-stage project. Its existing NTU Gmail Sync utility is documented here. The public website repository and contact channel are on GitHub.</p></div>
+          </details>
+          <details>
+            <summary>Can I use Claude-powered email features today?<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>No. Claude-powered features are an area of development and research. This site does not offer a live AI inbox or a production Claude integration.</p></div>
+          </details>
+          <details>
+            <summary>Does this website access my Gmail account?<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>No. This is a public information website. NTU Gmail Sync is a separate utility; any Gmail authorization must be initiated by the user through Google's OAuth process.</p></div>
+          </details>
+          <details>
+            <summary>Is the project affiliated with Google, NTU, or Anthropic?<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>No. Axo Mail and NTU Gmail Sync are independent projects and are not official services of Google, National Taiwan University, or Anthropic.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div>
+          <p class="overline overline-light">05 / Contact</p>
+          <h2 id="contact-title">Questions about the project?</h2>
+          <p>For general questions or technical feedback, open an issue in the public project repository. Please do not post passwords, OAuth tokens, or private email data.</p>
+        </div>
+        <a class="action action-primary" href="https://github.com/Axoled-Student/598787.xyz/issues" target="_blank" rel="noopener noreferrer">Contact on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">AXO <span>MAIL</span></span>
+        <p>Independent software development.<br>Building practical tools, one project at a time.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <nav aria-label="Footer site links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#development">Development</a><a href="#faq">FAQ</a></nav>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <nav aria-label="Footer resource links"><a href="/privacy-en.html">NTU Gmail Sync privacy</a><a href="/terms-en.html">NTU Gmail Sync terms</a><a href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>GitHub issues is the current public contact channel.</p>
+        <a href="https://github.com/Axoled-Student/598787.xyz/issues" target="_blank" rel="noopener noreferrer">Open an issue <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Axo Mail. Independent project.</span>
+      <span>Not affiliated with Google, NTU, or Anthropic.</span>
+    </div>
+  </footer>
+</body>
+</html>
