@@ -1,28 +1,41 @@
-# Axo Mail website
+# Axo Mail website / Axo Mail 官方網站
 
-Public website for **Axo Mail**, an independent, early-stage email productivity project.
+Axo Mail is an independent early-stage email tooling project.
 
-## Current project
+Axo Mail 是獨立開發的電子郵件工具專案，目前既有工作為 **NTU Gmail Sync**，Claude 郵件輔助功能仍在研究與規劃中，尚未正式推出。
 
-**NTU Gmail Sync** is a personal Gmail synchronization utility. This website documents its intended Google OAuth workflow and provides the relevant policies. The website itself is static and does not connect to Gmail.
+## Languages / 網站語言
 
-## Planned research
+Traditional Chinese (Taiwan) is the default, with a complete English alternative:
 
-The homepage describes potential Claude-assisted email summarization, natural-language discovery, and drafting. These are **concepts, not launched functionality**. No Claude API integration is implemented in this repository.
+| Page | 繁體中文 | English |
+| --- | --- | --- |
+| Homepage | `/` (`index.html`) | `/en.html` |
+| Privacy policy | `/privacy.html` | `/privacy-en.html` |
+| Terms of service | `/terms.html` | `/terms-en.html` |
 
-## Site files
+All pages expose language navigation and appropriate `hreflang` metadata.
 
-- `index.html`: responsive public landing page
-- `site-20261008-v3.css`: versioned production stylesheet (new URL avoids reuse of previously cached `site.css`)
-- `site.css`: legacy stylesheet, retained for compatibility
-- `privacy.html`: NTU Gmail Sync privacy policy
-- `terms.html`: NTU Gmail Sync terms of service
-- `CNAME`: custom domain configuration
+## Development status / 開發狀態
 
-## Deployment
+- **Existing project**: NTU Gmail Sync, a personal Gmail synchronization utility intended to work with a user's Google OAuth authorization.
+- **Planned research**: Claude-assisted email summarization, natural-language discovery, and user-reviewed reply drafts.
+- **No launched Claude email integration** is claimed, and this public static website does not access Gmail data.
 
-This is a static GitHub Pages site served at https://598787.xyz. Merge the reviewed pull request to the default branch to publish, subject to the repository's Pages settings.
+## Source files / 網站檔案
 
-## Transparency
+- `index.html`: Traditional Chinese homepage.
+- `en.html`: English homepage for international visitors.
+- `privacy.html` / `privacy-en.html`: the NTU Gmail Sync privacy policy.
+- `terms.html` / `terms-en.html`: the NTU Gmail Sync terms.
+- `site-20261008-zh-v4.css`: shared mobile-friendly styling. This is a versioned URL to avoid Safari retaining an older stylesheet.
+- `CNAME`: custom domain record.
+- `site.css` and `site-20261008-v3.css`: older stylesheets kept in the repository; current pages link to the versioned v4 file.
 
-Axo Mail is described as an independent project; the public website does not assert any legal incorporation status, customers, or revenue. It is not affiliated with Google, National Taiwan University, or Anthropic. Existing privacy and terms documents remain applicable to NTU Gmail Sync; revise them before changing its actual data practices or launching AI email processing.
+## Deployment / 部署
+
+This is a static GitHub Pages website for https://598787.xyz. Publishing the updated pages requires merging the associated pull request into the default branch, subject to the configured Pages deployment process.
+
+## Transparency / 專案透明性
+
+Axo Mail is an independent project, not an assertion of incorporation or a funded startup. It is not affiliated with Google, National Taiwan University, or Anthropic. The site's published policies describe NTU Gmail Sync; they must be reviewed and revised before any future AI email processing or change to real data-handling practices.

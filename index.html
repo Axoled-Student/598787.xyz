@@ -1,42 +1,51 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#142d41">
-  <meta name="description" content="Axo Mail is an independent software project focused on practical email tools. Learn about NTU Gmail Sync, our work with Google OAuth, and future Claude research.">
+  <meta name="description" content="Axo Mail 是獨立開發的 Gmail 工具專案。了解 NTU Gmail Sync、Google OAuth 郵件同步，以及規劃中的 Claude 郵件摘要、搜尋與回覆輔助功能。">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Axo Mail | Independent software project">
-  <meta property="og:description" content="Building practical email utilities, starting with NTU Gmail Sync. See current work, development plans, and project information.">
+  <meta property="og:title" content="Axo Mail｜Gmail 同步與電子郵件工具">
+  <meta property="og:description" content="從 NTU Gmail Sync 出發，開發實用的 Gmail 工具，並研究 Claude 如何協助處理郵件。">
   <meta property="og:url" content="https://598787.xyz/">
+  <meta property="og:locale" content="zh_TW">
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://598787.xyz/">
+  <link rel="alternate" hreflang="zh-TW" href="https://598787.xyz/">
+  <link rel="alternate" hreflang="en" href="https://598787.xyz/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://598787.xyz/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/site-20261008-v3.css">
-  <title>Axo Mail — Gmail tools and email workflow research</title>
+  <link rel="stylesheet" href="/site-20261008-zh-v4.css">
+  <title>Axo Mail｜Gmail 同步與郵件工作流程</title>
 </head>
 <body>
-  <a class="skip-link" href="#content">Skip to content</a>
+  <a class="skip-link" href="#content">跳至主要內容</a>
 
   <div class="utility-bar">
     <div class="container utility-inner">
-      <span>Independent software project</span>
-      <a href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span></a>
+      <span>獨立開發的電子郵件工具</span>
+      <div class="utility-links">
+        <span class="language-current" aria-current="page">繁中</span>
+        <a href="/en.html" lang="en" hreflang="en">EN</a>
+        <span class="utility-divider" aria-hidden="true"></span>
+        <a href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
   </div>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="/" aria-label="Axo Mail homepage">
+      <a class="logo" href="/" aria-label="Axo Mail 首頁">
         <span class="logo-symbol" aria-hidden="true">A</span>
         <span class="logo-name">AXO <span>MAIL</span></span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#development">Development</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+      <nav class="main-nav" aria-label="主要導覽">
+        <a href="#about">關於我們</a>
+        <a href="#projects">現有專案</a>
+        <a href="#development">開發規劃</a>
+        <a href="#faq">常見問題</a>
+        <a href="#contact">聯絡方式</a>
       </nav>
     </div>
   </header>
@@ -45,50 +54,54 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-layout">
         <div class="hero-copy">
-          <p class="overline overline-light">Welcome to Axo Mail</p>
-          <h1 id="hero-title">Building practical tools <span>around Gmail.</span></h1>
-          <p class="hero-description">Axo Mail is an independent project for people who manage their own Gmail accounts. Our existing work is NTU Gmail Sync, a personal synchronization utility. Next, we want to test whether Claude can help summarize long conversations, find relevant messages, and prepare replies for people to review.</p>
+          <p class="overline overline-light">Axo Mail｜電子郵件工具專案</p>
+          <h1 id="hero-title">讓 Gmail 同步與郵件整理，<span>更簡單、更省時。</span></h1>
+          <p class="hero-description">Axo Mail 是獨立開發的電子郵件工具專案。現有工作是以 Google OAuth 授權為基礎的 NTU Gmail Sync；下一階段將研究如何透過 Claude 協助使用者理解郵件、找到重要資訊，以及準備回覆草稿。AI 功能目前尚未上線。</p>
           <div class="hero-actions">
-            <a class="action action-primary" href="#projects">View our project <span aria-hidden="true">→</span></a>
-            <a class="action action-outline" href="#about">Learn about us</a>
+            <a class="action action-primary" href="#projects">了解現有專案 <span aria-hidden="true">→</span></a>
+            <a class="action action-outline" href="#development">查看開發規劃</a>
           </div>
         </div>
-        <aside class="hero-aside" aria-label="Project overview">
-          <p class="aside-title">At a glance</p>
+        <aside class="hero-aside" aria-label="專案簡介">
+          <p class="aside-title">專案概況</p>
           <div class="aside-item">
-            <span>What exists today</span>
+            <span>目前已有的專案</span>
             <strong>NTU Gmail Sync</strong>
-            <p>A personal utility built around user-authorized Gmail synchronization.</p>
+            <p>以使用者自行授權為核心，處理 Gmail 資料同步需求的個人工具。</p>
           </div>
           <div class="aside-item">
-            <span>Intended users</span>
-            <strong>Individuals managing Gmail</strong>
-            <p>People who want more control over syncing and understanding their own messages.</p>
+            <span>預期使用者</span>
+            <strong>需要管理自己 Gmail 的個人使用者</strong>
+            <p>希望更方便地同步、搜尋及理解自己電子郵件的人。</p>
           </div>
           <div class="aside-item">
-            <span>Where Claude fits</span>
-            <strong>Optional email assistance</strong>
-            <p>Planned summaries, search assistance, and user-reviewed drafts. Not released.</p>
+            <span>下一步研究</span>
+            <strong>Claude 郵件輔助功能</strong>
+            <p>規劃研究摘要、搜尋及回覆草稿；目前沒有正式推出。</p>
           </div>
         </aside>
       </div>
     </section>
 
-    <div class="section-trail" aria-hidden="true">
-      <div class="container trail-inner"><span>Independent development</span><span class="trail-separator"></span><span>Email tools</span><span class="trail-separator"></span><span>Thoughtful AI integration</span></div>
+    <div class="section-trail" aria-label="專案重點">
+      <div class="container trail-inner">
+        <span>獨立開發</span><span class="trail-separator" aria-hidden="true"></span>
+        <span>Gmail 工具</span><span class="trail-separator" aria-hidden="true"></span>
+        <span>Claude 整合研究</span>
+      </div>
     </div>
 
     <section class="section about-section" id="about" aria-labelledby="about-title">
       <div class="container split-layout">
         <div class="section-lead">
-          <p class="overline">01 / About</p>
-          <h2 id="about-title">Small in scope.<br>Clear in purpose.</h2>
+          <p class="overline">01 / 關於專案</p>
+          <h2 id="about-title">從實際需求出發，<br>把工具一步步做好。</h2>
         </div>
         <div class="section-copy">
-          <p class="lead">Axo Mail focuses on a simple problem: managing and understanding email can take too much time.</p>
-          <p>Our approach is straightforward: start with a concrete problem, build something useful, document what it does, and improve it over time.</p>
-          <p>We are developing for individual Gmail users who want to handle their own data and spend less time searching long threads. NTU Gmail Sync is the existing utility; Axo Mail is the wider direction for further email tools. AI-assisted functions remain research plans, not live features.</p>
-          <a class="inline-link" href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">Visit the project repository <span aria-hidden="true">↗</span></a>
+          <p class="lead">Axo Mail 關注的問題很單純：同步、搜尋與理解電子郵件，不應該花掉太多時間。</p>
+          <p>本專案以日常使用 Gmail 的個人使用者為對象，從特定的同步需求開始，逐步探索更好用的郵件工具。</p>
+          <p>目前的既有工作是 NTU Gmail Sync。後續的 Claude 郵件摘要、自然語言搜尋與回覆輔助仍屬研究規劃；我們會清楚區分現有工具與尚未推出的功能。</p>
+          <a class="inline-link" href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">查看 GitHub 專案 <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -96,23 +109,24 @@
     <section class="section projects-section" id="projects" aria-labelledby="projects-title">
       <div class="container">
         <div class="section-heading">
-          <p class="overline">02 / Projects</p>
-          <h2 id="projects-title">What we're working on</h2>
-          <p>We distinguish the utility we have already documented from the features we plan to test.</p>
+          <p class="overline">02 / 現有專案</p>
+          <h2 id="projects-title">目前正在做的事</h2>
+          <p>從既有的 Gmail 同步工具開始，公開說明它的用途、授權方式與資料處理原則。</p>
         </div>
 
         <article class="project-feature">
           <div class="project-ident">
-            <span class="project-index">Featured project / 01</span>
+            <span class="project-index">現有專案 / 01</span>
             <h3>NTU Gmail Sync</h3>
-            <span class="project-status">Existing project</span>
+            <span class="project-status">既有專案</span>
           </div>
           <div class="project-description">
-            <p>NTU Gmail Sync is a personal utility intended to let a user authorize their own Google account and perform Gmail synchronization for their requested workflow.</p>
-            <p>The utility is designed around user authorization with Google OAuth. This public website explains its purpose and links to data-handling policies; this website itself does not connect to Gmail. The name NTU Gmail Sync refers to this specific existing utility under the broader Axo Mail project direction.</p>
+            <p>NTU Gmail Sync 是個人開發的 Gmail 同步工具，讓使用者透過 Google OAuth 授權自己的 Google 帳號，並依所需功能進行郵件資料同步。</p>
+            <p>這個網站提供公開的專案說明，以及隱私權政策和服務條款。網站本身不會要求登入 Google 帳號，也不會直接讀取訪客的 Gmail 內容。</p>
+            <p>NTU Gmail Sync 是目前的具體開發成果；Axo Mail 則是延伸電子郵件工具的整體專案方向。</p>
             <div class="project-links">
-              <a class="inline-link" href="/privacy.html">Privacy policy <span aria-hidden="true">↗</span></a>
-              <a class="inline-link" href="/terms.html">Terms of service <span aria-hidden="true">↗</span></a>
+              <a class="inline-link" href="/privacy.html">隱私權政策 <span aria-hidden="true">↗</span></a>
+              <a class="inline-link" href="/terms.html">服務條款 <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </article>
@@ -122,50 +136,50 @@
     <section class="section development-section" id="development" aria-labelledby="development-title">
       <div class="container">
         <div class="section-heading">
-          <p class="overline">03 / Development</p>
-          <h2 id="development-title">Current direction</h2>
-          <p>We plan to test whether Claude can turn selected, user-authorized email content into something immediately useful. These are research topics, not available product features.</p>
+          <p class="overline">03 / 開發規劃</p>
+          <h2 id="development-title">研究 Claude 可以如何協助處理郵件</h2>
+          <p>以下是下一階段想測試的功能，尚未正式實作或對外開放。我們希望先確認準確性、實用性與使用者授權流程，再決定如何推出。</p>
         </div>
 
         <div class="development-list">
           <div class="development-row">
             <span class="row-number">01</span>
             <div>
-              <h3>Conversation summaries</h3>
-              <p>Given a conversation a user selects, Claude could generate a concise summary and identify follow-up items.</p>
+              <h3>長篇郵件摘要</h3>
+              <p>由使用者選取往來郵件後，規劃讓 Claude 整理討論重點、待辦事項與重要資訊。</p>
             </div>
-            <span class="phase">Research</span>
+            <span class="phase">研究中</span>
           </div>
           <div class="development-row">
             <span class="row-number">02</span>
             <div>
-              <h3>Natural-language search</h3>
-              <p>With authorized message context, Claude could help answer a user's question and point them to relevant messages.</p>
+              <h3>自然語言搜尋</h3>
+              <p>規劃使用已授權的相關郵件內容，協助回答使用者的問題，並指出答案涉及哪些郵件。</p>
             </div>
-            <span class="phase">Research</span>
+            <span class="phase">研究中</span>
           </div>
           <div class="development-row">
             <span class="row-number">03</span>
             <div>
-              <h3>Reply assistance</h3>
-              <p>Using a selected thread and user instructions, Claude could draft a reply for review. The user would decide whether to send it.</p>
+              <h3>回覆草稿輔助</h3>
+              <p>以使用者選擇的郵件及指示產生回覆建議，內容需由使用者確認後才能決定是否寄出。</p>
             </div>
-            <span class="phase">Research</span>
+            <span class="phase">研究中</span>
           </div>
         </div>
 
-        <div class="workflow-proposal" aria-label="Proposed Claude processing workflow">
-          <p>Proposed workflow — not implemented</p>
+        <div class="workflow-proposal" aria-label="未實作的 Claude 整合流程規劃">
+          <p>規劃中的處理流程｜尚未實作</p>
           <ol class="workflow-steps">
-            <li><strong>1. User selects</strong><span>A person authorizes access and chooses the messages or conversation they want help with.</span></li>
-            <li><strong>2. Claude processes</strong><span>The proposed integration would send only the relevant authorized content and the user’s request to Claude for analysis.</span></li>
-            <li><strong>3. User reviews</strong><span>A summary, cited answer, or draft comes back for review. The user stays in control of any reply.</span></li>
+            <li><strong>1. 使用者選擇內容</strong><span>先完成必要授權，再指定要摘要、搜尋或回覆的郵件與需求。</span></li>
+            <li><strong>2. Claude 協助處理</strong><span>未來的整合預計將與該需求相關、且獲得授權的內容提供給 Claude 分析。</span></li>
+            <li><strong>3. 使用者檢查結果</strong><span>產生摘要、查詢答案或草稿供使用者確認；是否寄出回覆由使用者決定。</span></li>
           </ol>
         </div>
 
         <div class="development-note">
-          <strong>About data and AI</strong>
-          <p>The Axo Mail website does not process Gmail messages or send email data to Claude. Before building or launching an integration, we will evaluate Google API Limited Use requirements, data protection, access controls, user consent, and retention policies. Nothing here claims a working Claude integration today.</p>
+          <strong>資料安全與使用者同意</strong>
+          <p>本網站不會讀取 Gmail 郵件，也不會把郵件資料傳送給 Claude。日後若實作 AI 功能，會先評估 Google API 使用者資料政策、必要的授權與告知方式、存取控制，以及資料保存與刪除機制，並在正式上線前更新相關說明。</p>
         </div>
       </div>
     </section>
@@ -173,26 +187,30 @@
     <section class="section faq-section" id="faq" aria-labelledby="faq-title">
       <div class="container faq-layout">
         <div class="section-lead">
-          <p class="overline">04 / Information</p>
-          <h2 id="faq-title">Frequently asked questions</h2>
-          <p>Basic information about the project and how it is being developed.</p>
+          <p class="overline">04 / 常見問題</p>
+          <h2 id="faq-title">你可能想了解的事</h2>
+          <p>關於專案用途、開發進度及資料權限的基本說明。</p>
         </div>
         <div class="faq-list">
           <details>
-            <summary>Who maintains Axo Mail?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-answer"><p>Axo Mail is an independently developed early-stage project. Its existing NTU Gmail Sync utility is documented here. The public website repository and contact channel are on GitHub.</p></div>
+            <summary>Axo Mail 與 NTU Gmail Sync 有什麼關係？<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>NTU Gmail Sync 是既有的個人 Gmail 同步工具；Axo Mail 是延伸郵件整理及 AI 輔助功能的整體專案方向。網站中的開發規劃不代表相關功能已上線。</p></div>
           </details>
           <details>
-            <summary>Can I use Claude-powered email features today?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-answer"><p>No. Claude-powered features are an area of development and research. This site does not offer a live AI inbox or a production Claude integration.</p></div>
+            <summary>目前可以使用 Claude 的郵件功能嗎？<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>還不行。Claude 郵件摘要、自然語言搜尋與回覆草稿都屬於規劃中的研究項目，目前沒有對外提供 AI 收件匣服務。</p></div>
           </details>
           <details>
-            <summary>Does this website access my Gmail account?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-answer"><p>No. This is a public information website. NTU Gmail Sync is a separate utility; any Gmail authorization must be initiated by the user through Google's OAuth process.</p></div>
+            <summary>瀏覽這個網站會讀取我的 Gmail 嗎？<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>不會。這是公開的資訊網站，不需要 Google 登入。NTU Gmail Sync 的帳號存取則需由使用者自行透過 Google OAuth 授權。</p></div>
           </details>
           <details>
-            <summary>Is the project affiliated with Google, NTU, or Anthropic?<span class="faq-toggle" aria-hidden="true"></span></summary>
-            <div class="faq-answer"><p>No. Axo Mail and NTU Gmail Sync are independent projects and are not official services of Google, National Taiwan University, or Anthropic.</p></div>
+            <summary>誰在開發 Axo Mail？<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Axo Mail 是獨立開發、仍在早期階段的軟體專案。可透過公開的 GitHub 儲存庫查看網站內容或提出問題。</p></div>
+          </details>
+          <details>
+            <summary>這是 Google、臺灣大學或 Anthropic 的官方服務嗎？<span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>不是。Axo Mail 與 NTU Gmail Sync 都是獨立專案，並非 Google、國立臺灣大學或 Anthropic 的官方服務。</p></div>
           </details>
         </div>
       </div>
@@ -201,11 +219,11 @@
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="container contact-layout">
         <div>
-          <p class="overline overline-light">05 / Contact</p>
-          <h2 id="contact-title">Questions about the project?</h2>
-          <p>For general questions or technical feedback, open an issue in the public project repository. Please do not post passwords, OAuth tokens, or private email data.</p>
+          <p class="overline overline-light">05 / 聯絡方式</p>
+          <h2 id="contact-title">有問題或想提供建議？</h2>
+          <p>目前可透過 GitHub Issues 聯繫專案開發者。請勿在公開的 Issue 中提供密碼、OAuth 權杖、私人郵件內容或其他敏感資訊。</p>
         </div>
-        <a class="action action-primary" href="https://github.com/Axoled-Student/598787.xyz/issues" target="_blank" rel="noopener noreferrer">Contact on GitHub <span aria-hidden="true">↗</span></a>
+        <a class="action action-primary" href="https://github.com/Axoled-Student/598787.xyz/issues" target="_blank" rel="noopener noreferrer">前往 GitHub Issues <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
@@ -214,25 +232,34 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <span class="footer-logo">AXO <span>MAIL</span></span>
-        <p>Independent software development.<br>Building practical tools, one project at a time.</p>
+        <p>獨立開發的電子郵件工具專案。<br>從實際需求出發，逐步改善使用體驗。</p>
       </div>
       <div>
-        <h3>Explore</h3>
-        <nav aria-label="Footer site links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#development">Development</a><a href="#faq">FAQ</a></nav>
+        <h3>網站導覽</h3>
+        <nav aria-label="頁尾網站導覽">
+          <a href="#about">關於專案</a>
+          <a href="#projects">現有專案</a>
+          <a href="#development">開發規劃</a>
+          <a href="#faq">常見問題</a>
+        </nav>
       </div>
       <div>
-        <h3>Resources</h3>
-        <nav aria-label="Footer resource links"><a href="/privacy.html">NTU Gmail Sync privacy</a><a href="/terms.html">NTU Gmail Sync terms</a><a href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+        <h3>相關資訊</h3>
+        <nav aria-label="頁尾相關資訊">
+          <a href="/privacy.html">隱私權政策</a>
+          <a href="/terms.html">服務條款</a>
+          <a href="https://github.com/Axoled-Student/598787.xyz" target="_blank" rel="noopener noreferrer">GitHub 專案</a>
+        </nav>
       </div>
       <div>
-        <h3>Contact</h3>
-        <p>GitHub issues is the current public contact channel.</p>
-        <a href="https://github.com/Axoled-Student/598787.xyz/issues" target="_blank" rel="noopener noreferrer">Open an issue <span aria-hidden="true">↗</span></a>
+        <h3>聯絡方式</h3>
+        <p>目前以公開的 GitHub Issues 作為專案聯絡管道。</p>
+        <a href="https://github.com/Axoled-Student/598787.xyz/issues" target="_blank" rel="noopener noreferrer">開啟 Issue <span aria-hidden="true">↗</span></a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© 2026 Axo Mail. Independent project.</span>
-      <span>Not affiliated with Google, NTU, or Anthropic.</span>
+      <span>© 2026 Axo Mail．獨立軟體專案。</span>
+      <span>本專案非 Google、國立臺灣大學或 Anthropic 官方服務。</span>
     </div>
   </footer>
 </body>
